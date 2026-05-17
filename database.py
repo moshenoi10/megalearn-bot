@@ -1,9 +1,10 @@
 import sqlite3
 import json
+import os
 from datetime import date
 from config import ENGLISH_LEVELS, MATH_LEVELS
 
-DB_PATH = "data/users.db"
+DB_PATH = "users.db"
 
 def init_db():
     conn = sqlite3.connect(DB_PATH)
